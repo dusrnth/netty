@@ -1,11 +1,9 @@
-package org.example;
+package org.example.chapter01;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import io.netty.util.concurrent.EventExecutorGroup;
 
 public class EchoClientHandler extends ChannelInboundHandlerAdapter {
     @Override

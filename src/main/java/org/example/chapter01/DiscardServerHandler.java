@@ -1,9 +1,7 @@
-package org.example;
+package org.example.chapter01;
 
-import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import io.netty.util.concurrent.EventExecutorGroup;
 
 public class DiscardServerHandler extends SimpleChannelInboundHandler<Object> {
     @Override
