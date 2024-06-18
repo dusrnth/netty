@@ -27,7 +27,7 @@ public class NonBlockingServer {
              ServerSocketChannel serverSocketChannel = ServerSocketChannel.open()) {
             if (serverSocketChannel.isOpen() && selector.isOpen()) {
                 serverSocketChannel.configureBlocking(false);
-                serverSocketChannel.bind(new InetSocketAddress(88888));
+                serverSocketChannel.bind(new InetSocketAddress(8888));
 
                 serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
                 System.out.println("접속 대기중");
